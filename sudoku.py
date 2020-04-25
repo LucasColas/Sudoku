@@ -10,10 +10,13 @@ bg = (255, 255, 255)
 
 run = True
 
-def grid():
-    for i in range(3):
-        pass 
+grid = []
 
+for row in range(3):
+    grid.append([])
+
+    for column in range(3):
+        pass
 
 def redraw_window():
 
