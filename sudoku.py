@@ -99,7 +99,13 @@ class Sudoku:
             return False
     return True
       
-
+  def is_end_game(self):
+    check = defaultdict(int)
+    for i in range(len(self.grid)):
+      for j in range(len(self.grid)):
+        if self.grid[i][j] == '.':
+          return False
+    return True
 
   def game_running(self):
     run = True
@@ -126,7 +132,10 @@ class Sudoku:
           print("Wrong")
           self.grid[row-1][column-1] = "."
 
-      
+      if self.is_end_game():
+        print("Sudoku accompli")
+        run = False
+        break
 
 
 
