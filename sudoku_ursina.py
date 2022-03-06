@@ -12,3 +12,5 @@ Data_Board =  [[5,3,0,0,7,0,0,0,0],
                [0,0,0,0,8,0,0,7,9]]
 
 Board = [[None for i in range(9)] for j in range(9)]
+
+number = InputField() #Ask user input
